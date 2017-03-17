@@ -119,6 +119,7 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
         }
        
     }
+    //handleDissmiss more Button
     func handleDismiss() {
         UIView.animate(withDuration: 0.5) { 
             self.blackView.alpha = 0
