@@ -59,6 +59,9 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
                     self.videos?.append(video)
                 
                 }
+                DispatchQueue.main.async(execute: { 
+                    self.collectionView?.reloadData()
+                })
                 
             }catch let jsonError {
                 print(jsonError)
@@ -100,31 +103,18 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
         let moreButton = UIBarButtonItem(image: moreImage, style: .plain, target: self, action: #selector(handleMore))
         navigationItem.rightBarButtonItems = [moreButton, searchBarButtonItem]
     }
+  
+    let settingsLaucher = SettingsLaucher()
+    
+    func handleMore() {
+        
+       settingsLaucher.showSetting()
+    }
     func handleSearch () {
         print(123)
     }
-    let blackView = UIView()
-    func handleMore() {
-        if let window = UIApplication.shared.keyWindow {
-            
-            blackView.backgroundColor = UIColor(white: 0, alpha: 0.5)
-            blackView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(HomeController.handleDismiss)))
-            blackView.frame = window.frame
-            window.addSubview(blackView)
-            blackView.alpha = 0
-            UIView.animate(withDuration: 0.5, animations: { 
-                self.blackView.alpha = 1
-            })
-            
-        }
-       
-    }
     //handleDissmiss more Button
-    func handleDismiss() {
-        UIView.animate(withDuration: 0.5) { 
-            self.blackView.alpha = 0
-        }
-    }
+   
     // create menuBar in collection View use customize Menubar for collection View
     let menuBar : MenuBar = {
         let mb = MenuBar()
