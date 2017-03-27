@@ -67,6 +67,7 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
                 print(jsonError)
             }
             
+            
            
         }.resume()
         

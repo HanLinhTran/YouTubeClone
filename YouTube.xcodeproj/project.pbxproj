@@ -16,6 +16,7 @@
 		69B3D0C21E6ACE7C00D50E1C /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B3D0C11E6ACE7C00D50E1C /* Extension.swift */; };
 		69B3D0C51E6ACF8800D50E1C /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B3D0C41E6ACF8800D50E1C /* VideoCell.swift */; };
 		69C0C3DD1E7ECD0F00D1A23B /* SettingsLaucher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C0C3DC1E7ECD0F00D1A23B /* SettingsLaucher.swift */; };
+		69DADBA81E80D5B90051D93B /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DADBA71E80D5B90051D93B /* SettingCell.swift */; };
 		69FD689A1E6E998C0050851E /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FD68991E6E998C0050851E /* Video.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		69B3D0C11E6ACE7C00D50E1C /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		69B3D0C41E6ACF8800D50E1C /* VideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 		69C0C3DC1E7ECD0F00D1A23B /* SettingsLaucher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsLaucher.swift; sourceTree = "<group>"; };
+		69DADBA71E80D5B90051D93B /* SettingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
 		69FD68991E6E998C0050851E /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,6 +92,7 @@
 			children = (
 				69B3D0C41E6ACF8800D50E1C /* VideoCell.swift */,
 				694B2CFE1E6C615800CCAD81 /* MenuBar.swift */,
+				69DADBA71E80D5B90051D93B /* SettingCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 			files = (
 				69B3D0C21E6ACE7C00D50E1C /* Extension.swift in Sources */,
 				69FD689A1E6E998C0050851E /* Video.swift in Sources */,
+				69DADBA81E80D5B90051D93B /* SettingCell.swift in Sources */,
 				69C0C3DD1E7ECD0F00D1A23B /* SettingsLaucher.swift in Sources */,
 				69B3D0C51E6ACF8800D50E1C /* VideoCell.swift in Sources */,
 				695C791B1E692CF3009C1992 /* HomeController.swift in Sources */,
